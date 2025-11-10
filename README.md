@@ -3,10 +3,13 @@
 📘 Overview
 
 The Supply Chain Delay Analysis project aims to identify and understand the underlying factors that contribute to delivery delays in supply chain and logistics operations.
+
 Using the Apriori association rule mining algorithm, this project analyzes supplier, component, route, and carrier data to uncover frequent co-occurrences that lead to shipment delays.
+
 It helps organizations pinpoint root causes, reduce bottlenecks, and enhance overall operational efficiency.
 
 This system is implemented as an interactive Streamlit web application that allows users to upload datasets, run Apriori analysis, visualize results, and download actionable insights.
+
 
 🚀 Features
 
@@ -26,13 +29,19 @@ Download frequent itemsets and association rules as CSV files
 
 Built-in insights summary for interpretation
 
+
+
 🧠 Objective
 
 To detect patterns and correlations between supply chain entities such as suppliers, components, carriers, and routes that frequently co-occur with delivery delays — enabling data-driven decision-making and process optimization.
 
 🧩 Tech Stack
 
+
+
 Programming Language: Python
+
+
 
 Libraries:
 
@@ -43,6 +52,7 @@ mlxtend – Apriori and association rules
 matplotlib – visualizations
 
 streamlit – web app interface
+
 
 Dataset:
 
@@ -96,6 +106,8 @@ supply-chain-delay-analysis/
 
 └── README.md                        # Project documentation
 
+
+
 🧾 Example Datasets
 Synthetic Supply Chain Dataset
 supplier_name	component_name	route	carrier	delay_cause	delay_days
@@ -106,21 +118,29 @@ Online Retail Dataset (UCI)
 
 Used for real-world association mining on product transactions.
 
+
+
 📈 Output
 
 Frequent Itemsets:
 Shows recurring supplier-component-route combinations that appear in delayed deliveries.
+
+
 
 Association Rules:
 Displays rules like:
 SupplierA + Route1 → DelayCause=Weather
 with metrics like support, confidence, and lift.
 
+
+
 Visualizations:
 
 Support vs Confidence Scatter Plot
 
 Top Frequent Itemsets Bar Graph
+
+
 
 🧭 Insights
 
@@ -130,6 +150,8 @@ Helps improve supplier selection, inventory planning, and logistics routing.
 
 Enables data-driven decisions to reduce operational risks and inefficiencies.
 
+
+
 💾 Outputs Generated
 
 delay_association_rules.csv – mined rules
@@ -137,6 +159,8 @@ delay_association_rules.csv – mined rules
 frequent_itemsets.csv – frequent itemsets
 
 Interactive visualization via Streamlit UI
+
+
 
 🔮 Future Enhancements
 
