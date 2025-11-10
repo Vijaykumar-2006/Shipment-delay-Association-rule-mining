@@ -78,14 +78,22 @@ pip install -r requirements.txt
 streamlit run app.py
 
 📂 Project Structure
+
 supply-chain-delay-analysis/
 │
+
 ├── app.py                          # Main Streamlit application
+
 ├── synthetic_supply_chain.csv       # Sample dataset
+
 ├── online+retail.zip                # Real dataset (optional)
+
 ├── delay_association_rules.csv      # Output rules
+
 ├── frequent_itemsets.csv            # Output frequent itemsets
+
 ├── requirements.txt                 # Dependencies
+
 └── README.md                        # Project documentation
 
 🧾 Example Datasets
