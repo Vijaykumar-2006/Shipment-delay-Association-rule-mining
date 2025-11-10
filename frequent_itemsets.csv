@@ -1,0 +1,86 @@
+support,itemsets
+0.2727272727272727,frozenset({'DTDC'})
+0.26573426573426573,frozenset({'East'})
+0.26573426573426573,frozenset({'West'})
+0.25874125874125875,frozenset({'North'})
+0.2517482517482518,frozenset({'Delhivery'})
+0.24475524475524477,frozenset({'BlueDart'})
+0.23776223776223776,frozenset({'Unknown'})
+0.23076923076923078,frozenset({'Motor'})
+0.23076923076923078,frozenset({'Amazon Logistics'})
+0.21678321678321677,frozenset({'Gamma Industries'})
+0.2097902097902098,frozenset({'Bearing'})
+0.2097902097902098,frozenset({'South'})
+0.20279720279720279,frozenset({'Delta Corp'})
+0.20279720279720279,frozenset({'Epsilon Exports'})
+0.1888111888111888,frozenset({'Alpha Ltd'})
+0.1888111888111888,frozenset({'Beta Co'})
+0.17482517482517482,frozenset({'Traffic'})
+0.17482517482517482,frozenset({'Supplier issue'})
+0.16783216783216784,frozenset({'Controller'})
+0.15384615384615385,frozenset({'Pump'})
+0.15384615384615385,frozenset({'Customs'})
+0.15384615384615385,frozenset({'Weather'})
+0.1258741258741259,frozenset({'Sensor'})
+0.11188811188811189,frozenset({'Valve'})
+0.1048951048951049,frozenset({'Carrier issue'})
+0.1048951048951049,"frozenset({'West', 'Gamma Industries'})"
+0.1048951048951049,"frozenset({'North', 'DTDC'})"
+0.09090909090909091,"frozenset({'North', 'Epsilon Exports'})"
+0.08391608391608392,"frozenset({'Unknown', 'DTDC'})"
+0.08391608391608392,"frozenset({'Delhivery', 'East'})"
+0.08391608391608392,"frozenset({'Delta Corp', 'East'})"
+0.07692307692307693,"frozenset({'Alpha Ltd', 'DTDC'})"
+0.07692307692307693,"frozenset({'Delhivery', 'Traffic'})"
+0.07692307692307693,"frozenset({'West', 'BlueDart'})"
+0.07692307692307693,"frozenset({'Gamma Industries', 'DTDC'})"
+0.06993006993006994,"frozenset({'South', 'BlueDart'})"
+0.06993006993006994,"frozenset({'Amazon Logistics', 'Delta Corp'})"
+0.06993006993006994,"frozenset({'Delhivery', 'Epsilon Exports'})"
+0.06993006993006994,"frozenset({'North', 'Bearing'})"
+0.06993006993006994,"frozenset({'Delhivery', 'Motor'})"
+0.06993006993006994,"frozenset({'Motor', 'DTDC'})"
+0.06993006993006994,"frozenset({'Supplier issue', 'Motor'})"
+0.06993006993006994,"frozenset({'Unknown', 'West'})"
+0.06993006993006994,"frozenset({'Epsilon Exports', 'Motor'})"
+0.06993006993006994,"frozenset({'East', 'Motor'})"
+0.06993006993006994,"frozenset({'Amazon Logistics', 'West'})"
+0.06993006993006994,"frozenset({'Gamma Industries', 'BlueDart'})"
+0.06293706293706294,"frozenset({'South', 'Customs'})"
+0.06293706293706294,"frozenset({'East', 'DTDC'})"
+0.06293706293706294,"frozenset({'Amazon Logistics', 'East'})"
+0.06293706293706294,"frozenset({'Bearing', 'DTDC'})"
+0.06293706293706294,"frozenset({'Amazon Logistics', 'Beta Co'})"
+0.06293706293706294,"frozenset({'Amazon Logistics', 'Controller'})"
+0.06293706293706294,"frozenset({'South', 'Unknown'})"
+0.06293706293706294,"frozenset({'North', 'Weather'})"
+0.06293706293706294,"frozenset({'Supplier issue', 'East'})"
+0.06293706293706294,"frozenset({'South', 'Motor'})"
+0.06293706293706294,"frozenset({'Delhivery', 'West'})"
+0.06293706293706294,"frozenset({'Delhivery', 'Unknown'})"
+0.06293706293706294,"frozenset({'Traffic', 'East'})"
+0.06293706293706294,"frozenset({'Unknown', 'Delta Corp'})"
+0.06293706293706294,"frozenset({'BlueDart', 'Motor'})"
+0.06293706293706294,"frozenset({'West', 'Controller'})"
+0.06293706293706294,"frozenset({'Supplier issue', 'DTDC'})"
+0.06293706293706294,"frozenset({'East', 'Bearing'})"
+0.06293706293706294,"frozenset({'Delhivery', 'North'})"
+0.055944055944055944,"frozenset({'Amazon Logistics', 'Bearing'})"
+0.055944055944055944,"frozenset({'North', 'Alpha Ltd'})"
+0.055944055944055944,"frozenset({'Alpha Ltd', 'West'})"
+0.055944055944055944,"frozenset({'Unknown', 'Beta Co'})"
+0.055944055944055944,"frozenset({'Customs', 'BlueDart'})"
+0.055944055944055944,"frozenset({'Unknown', 'Bearing'})"
+0.055944055944055944,"frozenset({'Beta Co', 'East'})"
+0.055944055944055944,"frozenset({'BlueDart', 'East'})"
+0.055944055944055944,"frozenset({'Epsilon Exports', 'BlueDart'})"
+0.055944055944055944,"frozenset({'BlueDart', 'Bearing'})"
+0.055944055944055944,"frozenset({'Delta Corp', 'Bearing'})"
+0.055944055944055944,"frozenset({'Sensor', 'DTDC'})"
+0.055944055944055944,"frozenset({'Weather', 'DTDC'})"
+0.055944055944055944,"frozenset({'West', 'DTDC'})"
+0.055944055944055944,"frozenset({'Delhivery', 'Delta Corp'})"
+0.055944055944055944,"frozenset({'Supplier issue', 'Epsilon Exports'})"
+0.055944055944055944,"frozenset({'Unknown', 'East'})"
+0.055944055944055944,"frozenset({'Gamma Industries', 'Motor'})"
+0.055944055944055944,"frozenset({'West', 'Motor'})"

@@ -1,0 +1,501 @@
+shipment_id,supplier_id,component_id,route,carrier,ship_date,scheduled_delivery,actual_delivery,delay_days,delay_cause,delayed,supplier_name,region,reliability_score,avg_lead_time,component_name,category,criticality,avg_cost
+SH0001,SUP001,C005,West,DTDC,2025-06-11,2025-06-20,2025-06-20,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0002,SUP002,C005,West,Amazon Logistics,2025-07-03,2025-07-09,2025-07-09,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0003,SUP002,C004,East,DTDC,2025-09-28,2025-10-01,2025-10-01,0,None,No,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0004,SUP002,C004,West,Amazon Logistics,2025-01-02,2025-01-07,2025-01-07,0,None,No,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0005,SUP005,C006,East,Amazon Logistics,2025-02-05,2025-02-08,2025-02-08,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0006,SUP005,C002,North,DTDC,2025-05-16,2025-05-22,2025-05-24,2,Weather,Yes,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0007,SUP005,C003,North,Amazon Logistics,2025-02-25,2025-03-01,2025-03-01,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0008,SUP005,C006,South,Delhivery,2025-02-16,2025-02-23,2025-02-23,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0009,SUP005,C005,East,Delhivery,2025-04-28,2025-05-04,2025-05-04,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0010,SUP005,C005,South,Delhivery,2025-05-21,2025-05-30,2025-05-30,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0011,SUP004,C002,East,Amazon Logistics,2025-03-01,2025-03-10,2025-03-10,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0012,SUP005,C003,South,Amazon Logistics,2025-01-26,2025-01-29,2025-01-29,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0013,SUP001,C006,West,BlueDart,2025-06-20,2025-06-26,2025-06-26,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0014,SUP003,C001,North,BlueDart,2025-08-04,2025-08-12,2025-08-12,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0015,SUP003,C005,North,Delhivery,2025-09-11,2025-09-17,2025-09-17,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0016,SUP005,C004,North,Delhivery,2025-01-14,2025-01-23,2025-01-27,99,Traffic,Yes,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0017,SUP004,C004,South,BlueDart,2025-09-19,2025-09-23,2025-09-23,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0018,SUP003,C001,West,Delhivery,2025-05-21,2025-05-27,2025-05-27,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0019,SUP002,C002,West,Amazon Logistics,2025-02-21,2025-03-02,2025-03-02,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0020,SUP004,C005,South,Delhivery,2025-06-26,2025-07-05,2025-07-05,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0021,SUP002,C002,South,BlueDart,2025-04-04,2025-04-12,2025-04-12,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0022,SUP001,C006,South,Delhivery,2025-04-13,2025-04-20,2025-04-20,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0023,SUP003,C001,West,Amazon Logistics,2025-02-12,2025-02-19,2025-02-19,0,,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0024,SUP004,C003,East,Delhivery,2025-06-26,2025-06-29,2025-06-29,0,None,No,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0025,SUP002,C004,North,BlueDart,2025-02-03,2025-02-09,2025-02-09,0,None,No,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0026,SUP005,C001,North,DTDC,2025-03-26,2025-04-02,2025-04-03,1,None,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0027,SUP005,C006,West,BlueDart,2025-07-18,2025-07-21,2025-07-22,-1,Carrier issue,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0028,SUP001,C004,South,BlueDart,2025-04-02,2025-04-08,2025-04-08,0,None,No,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0029,SUP002,C005,South,BlueDart,2025-01-07,2025-01-16,2025-01-17,1,Customs,Yes,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0030,SUP003,C004,West,BlueDart,2025-07-19,2025-07-24,2025-07-27,3,Weather,Yes,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0031,SUP002,C005,North,Delhivery,2025-01-25,2025-02-01,2025-02-03,2,None,Yes,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0032,SUP003,C006,West,BlueDart,2025-04-05,2025-04-08,2025-04-09,1,Weather,Yes,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0033,SUP005,C004,East,DTDC,2025-02-13,2025-02-19,2025-02-19,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0034,SUP001,C001,East,Delhivery,2025-08-09,2025-08-18,2025-08-18,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0035,SUP001,C003,North,Delhivery,2025-04-06,2025-04-13,2025-04-16,3,None,Yes,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0036,SUP004,C004,East,BlueDart,2025-03-23,2025-03-28,2025-03-28,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0037,SUP005,C003,South,DTDC,2025-03-02,2025-03-09,2025-03-12,3,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0038,SUP003,C005,North,BlueDart,2025-05-12,2025-05-15,2025-05-18,3,Carrier issue,Yes,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0039,SUP002,C002,North,Delhivery,2025-05-06,2025-05-09,2025-05-11,2,Traffic,Yes,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0040,SUP003,C005,East,DTDC,2025-07-06,2025-07-10,2025-07-10,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0041,SUP002,C002,South,Amazon Logistics,2025-09-08,2025-09-13,2025-09-13,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0042,SUP004,C006,South,BlueDart,2025-03-08,2025-03-17,2025-03-17,0,,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0043,SUP005,C005,South,Amazon Logistics,2025-07-17,2025-07-24,2025-07-24,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0044,SUP003,C001,South,BlueDart,2025-04-05,2025-04-13,2025-04-13,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0045,SUP003,C003,West,BlueDart,2025-07-18,2025-07-27,2025-07-27,99,None,Yes,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0046,SUP003,C003,East,BlueDart,2025-01-06,2025-01-11,2025-01-11,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0047,SUP005,C004,West,BlueDart,2025-05-28,2025-06-04,2025-06-04,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0048,SUP001,C004,South,Amazon Logistics,2025-07-12,2025-07-17,2025-07-17,0,None,No,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0049,SUP005,C001,North,DTDC,2025-02-15,2025-02-21,2025-02-26,5,Carrier issue,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0050,SUP005,C001,East,Delhivery,2025-03-11,2025-03-19,2025-03-19,0,,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0051,SUP002,C002,East,Delhivery,2025-09-22,2025-09-30,2025-09-30,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0052,SUP004,C006,West,Delhivery,2025-04-24,2025-04-30,2025-04-30,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0053,SUP004,C001,East,Delhivery,2025-05-26,2025-06-03,2025-06-05,2,Traffic,Yes,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0054,SUP002,C001,South,BlueDart,2025-02-15,2025-02-24,2025-02-25,1,Traffic,Yes,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0055,SUP001,C001,East,DTDC,2025-04-24,2025-04-27,2025-04-27,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0056,SUP001,C006,South,Amazon Logistics,2025-09-15,2025-09-23,2025-09-23,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0057,SUP005,C004,North,Amazon Logistics,2025-04-26,2025-05-03,2025-05-06,3,Carrier issue,Yes,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0058,SUP001,C002,East,Delhivery,2025-02-28,2025-03-03,2025-03-03,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0059,SUP001,C005,South,Delhivery,2025-06-05,2025-06-08,2025-06-08,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0060,SUP004,C002,South,Amazon Logistics,2025-05-21,2025-05-27,2025-05-27,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0061,SUP003,C002,East,Amazon Logistics,2025-02-21,2025-02-26,2025-02-26,0,,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0062,SUP003,C004,West,Delhivery,2025-04-05,2025-04-08,2025-04-08,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0063,SUP003,C001,East,BlueDart,2025-04-17,2025-04-25,2025-04-29,4,Customs,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0064,SUP005,C004,West,Amazon Logistics,2025-03-13,2025-03-19,2025-03-19,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0065,SUP001,C006,East,Amazon Logistics,2025-06-27,2025-07-01,2025-07-06,5,None,Yes,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0066,SUP001,C006,North,Delhivery,2025-08-05,2025-08-08,2025-08-11,3,Weather,Yes,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0067,SUP003,C006,West,Amazon Logistics,2025-01-17,2025-01-20,2025-01-24,4,Weather,Yes,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0068,SUP005,C005,East,DTDC,2025-07-19,2025-07-27,2025-07-27,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0069,SUP001,C003,West,BlueDart,2025-07-11,2025-07-14,2025-07-14,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0070,SUP003,C005,North,Amazon Logistics,2025-04-23,2025-05-01,2025-05-01,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0071,SUP004,C005,North,BlueDart,2025-02-27,2025-03-05,2025-03-05,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0072,SUP005,C006,East,BlueDart,2025-03-05,2025-03-13,2025-03-13,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0073,SUP004,C002,West,Amazon Logistics,2025-04-28,2025-05-04,2025-05-04,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0074,SUP004,C001,North,Delhivery,2025-09-22,2025-09-27,2025-09-27,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0075,SUP001,C006,East,Delhivery,2025-04-02,2025-04-10,2025-04-10,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0076,SUP003,C006,North,DTDC,2025-06-13,2025-06-19,2025-06-22,3,Traffic,Yes,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0077,SUP005,C006,South,BlueDart,2025-04-05,2025-04-14,2025-04-14,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0078,SUP002,C005,East,BlueDart,2025-01-13,2025-01-16,2025-01-16,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0079,SUP004,C001,North,DTDC,2025-07-19,2025-07-24,2025-07-24,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0080,SUP005,C001,South,Amazon Logistics,2025-08-26,2025-09-02,2025-09-06,4,Customs,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0081,SUP001,C003,North,Amazon Logistics,2025-01-21,2025-01-26,2025-01-26,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0082,SUP005,C004,West,BlueDart,2025-08-16,2025-08-20,2025-08-20,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0083,SUP004,C006,West,BlueDart,2025-07-15,2025-07-20,2025-07-20,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0084,SUP003,C003,East,Delhivery,2025-08-07,2025-08-16,2025-08-16,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0085,SUP003,C002,West,BlueDart,2025-05-24,2025-05-27,2025-05-27,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0086,SUP003,C001,East,DTDC,2025-07-13,2025-07-22,2025-07-23,1,Supplier issue,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0087,SUP002,C005,East,Amazon Logistics,2025-01-28,2025-02-02,2025-02-02,99,None,Yes,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0088,SUP005,C004,East,Delhivery,2025-01-06,2025-01-09,2025-01-09,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0089,SUP004,C001,East,Delhivery,2025-03-08,2025-03-17,2025-03-20,3,Supplier issue,Yes,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0090,SUP001,C003,West,Delhivery,2025-09-05,2025-09-14,2025-09-14,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0091,SUP002,C004,East,DTDC,2025-03-08,2025-03-12,2025-03-16,-1,Customs,No,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0092,SUP001,C006,South,BlueDart,2025-02-25,2025-03-03,2025-03-03,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0093,SUP003,C003,North,DTDC,2025-06-16,2025-06-19,2025-06-19,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0094,SUP001,C002,East,DTDC,2025-06-09,2025-06-15,2025-06-15,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0095,SUP003,C003,East,Amazon Logistics,2025-06-12,2025-06-17,2025-06-17,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0096,SUP005,C006,West,Delhivery,2025-08-01,2025-08-04,2025-08-04,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0097,SUP004,C003,West,Amazon Logistics,2025-08-04,2025-08-09,2025-08-10,1,None,Yes,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0098,SUP003,C006,East,BlueDart,2025-06-11,2025-06-17,2025-06-17,0,None,No,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0099,SUP001,C006,South,DTDC,2025-02-20,2025-02-26,2025-03-02,4,Weather,Yes,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0100,SUP001,C003,West,DTDC,2025-04-22,2025-04-30,2025-04-30,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0101,SUP005,C006,East,Delhivery,2025-05-11,2025-05-19,2025-05-20,1,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0102,SUP004,C003,North,Amazon Logistics,2025-09-25,2025-10-02,2025-10-02,0,None,No,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0103,SUP005,C005,North,Amazon Logistics,2025-06-11,2025-06-19,2025-06-19,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0104,SUP001,C001,East,Delhivery,2025-05-21,2025-05-29,2025-05-29,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0105,SUP005,C005,East,Amazon Logistics,2025-08-24,2025-08-31,2025-08-31,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0106,SUP004,C001,North,BlueDart,2025-08-21,2025-08-24,2025-08-24,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0107,SUP004,C005,North,BlueDart,2025-03-07,2025-03-15,2025-03-15,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0108,SUP002,C003,North,Delhivery,2025-05-16,2025-05-22,2025-05-22,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0109,SUP004,C001,West,Amazon Logistics,2025-09-12,2025-09-21,2025-09-22,1,Customs,Yes,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0110,SUP005,C005,West,Delhivery,2025-02-26,2025-03-04,2025-03-04,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0111,SUP003,C003,North,DTDC,2025-07-20,2025-07-28,2025-07-28,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0112,SUP003,C004,West,Delhivery,2025-01-02,2025-01-10,2025-01-10,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0113,SUP005,C004,West,DTDC,2025-06-04,2025-06-12,2025-06-12,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0114,SUP003,C005,West,Delhivery,2025-03-23,2025-03-31,2025-04-03,3,None,Yes,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0115,SUP004,C001,North,Delhivery,2025-01-22,2025-01-26,2025-01-26,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0116,SUP003,C004,North,Delhivery,2025-09-08,2025-09-11,2025-09-11,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0117,SUP005,C004,North,BlueDart,2025-06-25,2025-06-28,2025-06-28,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0118,SUP005,C004,West,Amazon Logistics,2025-08-11,2025-08-18,2025-08-18,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0119,SUP003,C005,East,BlueDart,2025-04-05,2025-04-11,2025-04-11,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0120,SUP003,C003,North,BlueDart,2025-04-14,2025-04-17,2025-04-17,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0121,SUP005,C005,East,Delhivery,2025-06-09,2025-06-15,2025-06-20,5,Traffic,Yes,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0122,SUP004,C005,East,Delhivery,2025-01-26,2025-02-03,2025-02-06,3,Traffic,Yes,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0123,SUP003,C002,East,Delhivery,2025-08-04,2025-08-10,2025-08-10,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0124,SUP003,C004,South,Amazon Logistics,2025-04-25,2025-05-02,2025-05-02,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0125,SUP003,C002,East,Delhivery,2025-07-23,2025-07-30,2025-07-30,0,,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0126,SUP001,C001,South,DTDC,2025-06-07,2025-06-13,2025-06-18,5,None,Yes,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0127,SUP005,C005,South,Delhivery,2025-04-21,2025-04-28,2025-04-28,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0128,SUP001,C002,North,Delhivery,2025-06-28,2025-07-01,2025-07-01,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0129,SUP002,C001,North,Delhivery,2025-09-10,2025-09-14,2025-09-14,0,None,No,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0130,SUP004,C004,East,DTDC,2025-03-19,2025-03-28,2025-03-31,3,None,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0131,SUP001,C001,East,BlueDart,2025-02-27,2025-03-07,2025-03-07,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0132,SUP005,C003,East,Delhivery,2025-05-10,2025-05-19,2025-05-21,2,Customs,Yes,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0133,SUP002,C005,North,BlueDart,2025-02-04,2025-02-13,2025-02-13,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0134,SUP005,C002,North,DTDC,2025-07-19,2025-07-23,2025-07-23,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0135,SUP004,C006,East,DTDC,2025-06-24,2025-06-27,2025-06-27,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0136,SUP004,C002,North,BlueDart,2025-02-04,2025-02-12,2025-02-12,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0137,SUP004,C005,East,BlueDart,2025-04-13,2025-04-20,2025-04-20,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0138,SUP005,C004,East,BlueDart,2025-08-06,2025-08-10,2025-08-11,1,Carrier issue,Yes,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0139,SUP002,C002,North,DTDC,2025-08-23,2025-08-30,2025-08-30,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0140,SUP003,C004,East,BlueDart,2025-01-11,2025-01-20,2025-01-20,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0141,SUP003,C001,South,DTDC,2025-09-18,2025-09-25,2025-09-25,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0142,SUP003,C002,North,DTDC,2025-01-23,2025-01-31,2025-02-04,4,,Yes,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0143,SUP002,C003,South,DTDC,2025-06-28,2025-07-03,2025-07-03,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0144,SUP001,C002,North,Amazon Logistics,2025-09-16,2025-09-22,2025-09-22,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0145,SUP005,C005,West,Delhivery,2025-09-15,2025-09-24,2025-09-24,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0146,SUP004,C001,West,DTDC,2025-09-05,2025-09-10,2025-09-10,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0147,SUP005,C002,North,Amazon Logistics,2025-05-17,2025-05-26,2025-05-28,2,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0148,SUP005,C006,East,Delhivery,2025-04-24,2025-04-28,2025-04-28,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0149,SUP005,C003,North,Amazon Logistics,2025-04-14,2025-04-20,2025-04-20,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0150,SUP001,C002,East,Delhivery,2025-07-28,2025-08-06,2025-08-06,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0151,SUP004,C001,East,Delhivery,2025-07-05,2025-07-11,2025-07-11,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0152,SUP001,C005,South,BlueDart,2025-03-03,2025-03-10,2025-03-10,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0153,SUP004,C005,East,Delhivery,2025-01-01,2025-01-07,2025-01-07,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0154,SUP005,C002,South,Delhivery,2025-03-16,2025-03-22,2025-03-26,4,None,Yes,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0155,SUP002,C006,East,BlueDart,2025-05-06,2025-05-14,2025-05-14,0,None,No,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0156,SUP003,C001,South,DTDC,2025-05-04,2025-05-13,2025-05-13,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0157,SUP003,C003,East,Delhivery,2025-04-18,2025-04-25,2025-04-27,-1,,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0158,SUP001,C005,North,BlueDart,2025-09-11,2025-09-19,2025-09-19,-1,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0159,SUP003,C005,North,Delhivery,2025-02-03,2025-02-12,2025-02-12,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0160,SUP001,C005,North,Delhivery,2025-09-18,2025-09-22,2025-09-22,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0161,SUP004,C003,South,Amazon Logistics,2025-02-09,2025-02-16,2025-02-16,0,None,No,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0162,SUP001,C005,West,DTDC,2025-09-16,2025-09-24,2025-09-25,1,Customs,Yes,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0163,SUP005,C001,North,BlueDart,2025-01-26,2025-02-01,2025-02-01,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0164,SUP005,C006,East,BlueDart,2025-01-08,2025-01-12,2025-01-14,-1,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0165,SUP005,C006,West,Delhivery,2025-06-15,2025-06-23,2025-06-23,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0166,SUP003,C004,East,BlueDart,2025-02-01,2025-02-04,2025-02-04,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0167,SUP002,C001,North,DTDC,2025-04-18,2025-04-25,2025-04-25,0,None,No,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0168,SUP001,C004,West,BlueDart,2025-05-03,2025-05-10,2025-05-15,5,Carrier issue,Yes,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0169,SUP004,C004,South,BlueDart,2025-08-03,2025-08-11,2025-08-14,3,Traffic,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0170,SUP002,C006,West,BlueDart,2025-02-02,2025-02-08,2025-02-08,0,None,No,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0171,SUP002,C001,West,Delhivery,2025-07-03,2025-07-08,2025-07-09,1,Supplier issue,Yes,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0172,SUP004,C001,South,Amazon Logistics,2025-09-20,2025-09-27,2025-09-27,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0173,SUP004,C002,North,DTDC,2025-02-01,2025-02-08,2025-02-08,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0174,SUP004,C006,South,Amazon Logistics,2025-01-24,2025-02-01,2025-02-05,4,None,Yes,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0175,SUP003,C004,West,BlueDart,2025-08-02,2025-08-09,2025-08-09,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0176,SUP004,C001,West,Amazon Logistics,2025-05-05,2025-05-09,2025-05-14,5,Carrier issue,Yes,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0177,SUP003,C002,North,BlueDart,2025-09-28,2025-10-07,2025-10-07,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0178,SUP004,C001,West,Amazon Logistics,2025-01-21,2025-01-29,2025-01-29,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0179,SUP001,C001,West,Amazon Logistics,2025-07-18,2025-07-27,2025-07-27,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0180,SUP004,C005,West,DTDC,2025-09-13,2025-09-21,2025-09-21,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0181,SUP001,C005,North,Delhivery,2025-01-18,2025-01-22,2025-01-22,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0182,SUP005,C003,West,Delhivery,2025-01-05,2025-01-09,2025-01-09,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0183,SUP001,C002,East,Amazon Logistics,2025-02-09,2025-02-13,2025-02-13,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0184,SUP001,C005,South,Delhivery,2025-01-14,2025-01-21,2025-01-21,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0185,SUP005,C003,North,BlueDart,2025-03-22,2025-03-31,2025-04-04,4,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0186,SUP001,C002,North,DTDC,2025-07-20,2025-07-25,2025-07-29,4,Traffic,Yes,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0187,SUP003,C004,South,Amazon Logistics,2025-06-05,2025-06-09,2025-06-09,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0188,SUP002,C001,South,Delhivery,2025-06-17,2025-06-20,2025-06-20,0,None,No,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0189,SUP004,C005,South,Amazon Logistics,2025-09-15,2025-09-20,2025-09-24,4,None,Yes,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0190,SUP002,C006,West,BlueDart,2025-05-09,2025-05-14,2025-05-16,2,Traffic,Yes,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0191,SUP005,C004,South,BlueDart,2025-09-28,2025-10-03,2025-10-03,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0192,SUP005,C001,East,Delhivery,2025-09-15,2025-09-22,2025-09-22,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0193,SUP004,C001,West,Amazon Logistics,2025-04-06,2025-04-14,2025-04-14,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0194,SUP004,C002,South,Amazon Logistics,2025-04-15,2025-04-20,2025-04-20,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0195,SUP001,C002,West,DTDC,2025-09-19,2025-09-28,2025-09-28,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0196,SUP005,C006,West,BlueDart,2025-06-01,2025-06-08,2025-06-10,2,Customs,Yes,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0197,SUP001,C005,South,BlueDart,2025-07-16,2025-07-24,2025-07-25,1,Customs,Yes,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0198,SUP002,C006,North,BlueDart,2025-05-16,2025-05-25,2025-05-25,0,None,No,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0199,SUP002,C005,North,Amazon Logistics,2025-07-01,2025-07-08,2025-07-08,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0200,SUP002,C001,East,Delhivery,2025-07-11,2025-07-16,2025-07-20,4,Traffic,Yes,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0201,SUP005,C005,South,Delhivery,2025-03-16,2025-03-19,2025-03-20,1,Customs,Yes,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0202,SUP002,C005,North,Delhivery,2025-08-01,2025-08-07,2025-08-07,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0203,SUP004,C003,West,Delhivery,2025-08-12,2025-08-15,2025-08-15,0,None,No,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0204,SUP002,C001,South,DTDC,2025-02-15,2025-02-20,2025-02-24,4,None,Yes,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0205,SUP002,C005,South,BlueDart,2025-04-05,2025-04-09,2025-04-09,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0206,SUP005,C006,West,BlueDart,2025-05-05,2025-05-14,2025-05-19,5,Customs,Yes,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0207,SUP004,C001,South,DTDC,2025-02-27,2025-03-05,2025-03-05,0,,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0208,SUP002,C001,East,BlueDart,2025-03-05,2025-03-12,2025-03-15,-1,None,No,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0209,SUP002,C005,West,Delhivery,2025-07-11,2025-07-14,2025-07-14,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0210,SUP005,C002,East,DTDC,2025-03-20,2025-03-23,2025-03-23,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0211,SUP001,C006,North,BlueDart,2025-01-02,2025-01-05,2025-01-05,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0212,SUP001,C004,East,DTDC,2025-04-17,2025-04-22,2025-04-22,0,None,No,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0213,SUP001,C001,West,BlueDart,2025-01-11,2025-01-17,2025-01-17,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0214,SUP004,C004,South,BlueDart,2025-05-14,2025-05-17,2025-05-18,1,None,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0215,SUP003,C004,South,DTDC,2025-04-01,2025-04-10,2025-04-14,4,Weather,Yes,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0216,SUP001,C006,South,DTDC,2025-01-02,2025-01-07,2025-01-07,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0217,SUP002,C005,West,DTDC,2025-02-11,2025-02-18,2025-02-18,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0218,SUP001,C002,East,Delhivery,2025-01-16,2025-01-22,2025-01-22,0,,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0219,SUP005,C004,South,Delhivery,2025-02-02,2025-02-07,2025-02-07,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0220,SUP002,C001,East,Amazon Logistics,2025-04-09,2025-04-16,2025-04-17,1,Supplier issue,Yes,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0221,SUP003,C002,South,Delhivery,2025-05-21,2025-05-30,2025-05-30,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0222,SUP004,C004,East,DTDC,2025-02-12,2025-02-16,2025-02-18,2,Traffic,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0223,SUP001,C005,North,Amazon Logistics,2025-05-02,2025-05-09,2025-05-14,5,Carrier issue,Yes,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0224,SUP003,C001,East,BlueDart,2025-02-09,2025-02-14,2025-02-18,-1,Carrier issue,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0225,SUP002,C002,East,BlueDart,2025-08-28,2025-08-31,2025-09-04,4,,Yes,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0226,SUP003,C003,South,DTDC,2025-05-17,2025-05-20,2025-05-20,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0227,SUP003,C003,West,BlueDart,2025-07-12,2025-07-21,2025-07-21,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0228,SUP003,C002,North,BlueDart,2025-03-06,2025-03-10,2025-03-10,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0229,SUP003,C002,South,Delhivery,2025-04-23,2025-04-28,2025-05-03,5,Carrier issue,Yes,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0230,SUP005,C004,South,Delhivery,2025-03-22,2025-03-29,2025-03-29,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0231,SUP004,C001,West,Amazon Logistics,2025-02-24,2025-03-01,2025-03-01,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0232,SUP005,C006,West,Amazon Logistics,2025-04-16,2025-04-23,2025-04-23,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0233,SUP004,C004,West,Delhivery,2025-04-23,2025-04-29,2025-04-29,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0234,SUP005,C004,North,BlueDart,2025-09-19,2025-09-28,2025-10-02,4,None,Yes,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0235,SUP002,C002,West,Amazon Logistics,2025-09-28,2025-10-04,2025-10-04,0,,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0236,SUP005,C003,South,DTDC,2025-09-02,2025-09-11,2025-09-11,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0237,SUP005,C004,West,Amazon Logistics,2025-06-19,2025-06-25,2025-06-25,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0238,SUP005,C004,South,DTDC,2025-03-03,2025-03-08,2025-03-08,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0239,SUP001,C005,South,BlueDart,2025-06-24,2025-06-29,2025-06-29,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0240,SUP005,C002,South,DTDC,2025-04-09,2025-04-14,2025-04-14,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0241,SUP003,C002,South,Amazon Logistics,2025-05-06,2025-05-10,2025-05-10,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0242,SUP001,C005,North,Amazon Logistics,2025-09-20,2025-09-24,2025-09-29,5,Customs,Yes,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0243,SUP003,C006,North,Delhivery,2025-01-26,2025-02-04,2025-02-04,0,None,No,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0244,SUP003,C001,East,Delhivery,2025-06-04,2025-06-07,2025-06-07,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0245,SUP005,C005,North,Amazon Logistics,2025-08-03,2025-08-09,2025-08-13,4,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0246,SUP005,C004,North,Delhivery,2025-08-17,2025-08-20,2025-08-20,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0247,SUP005,C004,West,DTDC,2025-01-11,2025-01-14,2025-01-14,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0248,SUP004,C004,East,Delhivery,2025-08-08,2025-08-16,2025-08-21,5,Customs,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0249,SUP004,C005,East,Delhivery,2025-01-23,2025-01-30,2025-01-30,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0250,SUP004,C005,South,BlueDart,2025-07-18,2025-07-25,2025-07-25,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0251,SUP005,C004,North,DTDC,2025-03-11,2025-03-18,2025-03-23,5,Weather,Yes,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0252,SUP004,C001,East,DTDC,2025-05-24,2025-05-30,2025-05-30,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0253,SUP005,C005,South,Delhivery,2025-06-14,2025-06-20,2025-06-20,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0254,SUP001,C006,North,DTDC,2025-01-04,2025-01-13,2025-01-13,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0255,SUP002,C005,East,DTDC,2025-07-01,2025-07-09,2025-07-09,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0256,SUP005,C002,East,BlueDart,2025-07-06,2025-07-09,2025-07-09,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0257,SUP001,C006,West,DTDC,2025-08-17,2025-08-25,2025-08-25,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0258,SUP005,C002,South,Delhivery,2025-01-13,2025-01-22,2025-01-22,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0259,SUP005,C006,West,Amazon Logistics,2025-08-17,2025-08-23,2025-08-27,4,Carrier issue,Yes,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0260,SUP005,C003,East,Amazon Logistics,2025-07-09,2025-07-15,2025-07-15,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0261,SUP002,C003,West,DTDC,2025-09-21,2025-09-25,2025-09-25,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0262,SUP005,C005,West,DTDC,2025-08-08,2025-08-12,2025-08-12,0,,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0263,SUP002,C005,West,DTDC,2025-04-06,2025-04-12,2025-04-12,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0264,SUP001,C004,South,Delhivery,2025-03-28,2025-04-03,2025-04-03,0,None,No,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0265,SUP003,C001,North,DTDC,2025-01-22,2025-01-28,2025-01-29,1,Supplier issue,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0266,SUP002,C003,West,DTDC,2025-05-05,2025-05-08,2025-05-08,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0267,SUP002,C002,South,Amazon Logistics,2025-02-05,2025-02-11,2025-02-11,-1,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0268,SUP004,C002,West,DTDC,2025-01-28,2025-02-04,2025-02-04,0,,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0269,SUP001,C003,East,Amazon Logistics,2025-04-09,2025-04-14,2025-04-16,2,Weather,Yes,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0270,SUP005,C001,South,Delhivery,2025-01-08,2025-01-13,2025-01-14,1,Customs,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0271,SUP004,C004,North,Amazon Logistics,2025-05-28,2025-06-01,2025-06-01,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0272,SUP001,C006,South,Delhivery,2025-07-28,2025-08-05,2025-08-10,5,Supplier issue,Yes,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0273,SUP001,C001,East,DTDC,2025-04-02,2025-04-09,2025-04-09,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0274,SUP001,C001,West,BlueDart,2025-02-18,2025-02-21,2025-02-23,2,Customs,Yes,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0275,SUP004,C006,South,BlueDart,2025-01-24,2025-02-02,2025-02-02,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0276,SUP004,C004,West,Delhivery,2025-05-25,2025-06-01,2025-06-02,1,None,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0277,SUP005,C001,East,BlueDart,2025-01-22,2025-01-30,2025-01-31,1,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0278,SUP002,C005,West,DTDC,2025-01-11,2025-01-18,2025-01-18,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0279,SUP005,C002,East,Amazon Logistics,2025-01-09,2025-01-12,2025-01-12,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0280,SUP002,C005,North,Delhivery,2025-03-22,2025-03-25,2025-03-25,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0281,SUP001,C002,West,Delhivery,2025-02-21,2025-03-02,2025-03-03,1,None,Yes,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0282,SUP003,C004,North,DTDC,2025-08-06,2025-08-13,2025-08-16,3,Traffic,Yes,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0283,SUP004,C005,North,BlueDart,2025-08-12,2025-08-19,2025-08-19,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0284,SUP004,C005,South,BlueDart,2025-02-26,2025-03-05,2025-03-07,2,None,Yes,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0285,SUP005,C001,West,Delhivery,2025-01-04,2025-01-09,2025-01-09,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0286,SUP005,C002,East,Delhivery,2025-02-12,2025-02-20,2025-02-20,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0287,SUP003,C006,South,BlueDart,2025-07-01,2025-07-04,2025-07-09,5,Weather,Yes,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0288,SUP001,C005,West,Amazon Logistics,2025-02-21,2025-02-27,2025-02-27,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0289,SUP002,C004,North,DTDC,2025-06-17,2025-06-20,2025-06-22,2,Weather,Yes,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0290,SUP004,C001,South,BlueDart,2025-09-06,2025-09-12,2025-09-12,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0291,SUP001,C002,North,Delhivery,2025-04-06,2025-04-15,2025-04-15,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0292,SUP003,C005,West,BlueDart,2025-05-05,2025-05-09,2025-05-09,0,,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0293,SUP003,C002,East,Delhivery,2025-04-11,2025-04-16,2025-04-16,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0294,SUP002,C004,North,BlueDart,2025-01-10,2025-01-16,2025-01-20,4,,Yes,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0295,SUP004,C004,North,BlueDart,2025-08-17,2025-08-24,2025-08-24,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0296,SUP002,C006,West,BlueDart,2025-04-07,2025-04-12,2025-04-12,0,None,No,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0297,SUP003,C004,East,Amazon Logistics,2025-09-11,2025-09-20,2025-09-20,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0298,SUP001,C003,North,DTDC,2025-07-27,2025-08-05,2025-08-07,2,Weather,Yes,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0299,SUP002,C006,North,Amazon Logistics,2025-06-01,2025-06-06,2025-06-06,0,None,No,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0300,SUP002,C003,West,Amazon Logistics,2025-04-19,2025-04-27,2025-04-27,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0301,SUP001,C004,East,DTDC,2025-07-21,2025-07-25,2025-07-25,99,None,Yes,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0302,SUP001,C005,South,DTDC,2025-09-21,2025-09-25,2025-09-25,0,None,No,Alpha Ltd,US,0.87,7,Pump,Mechanical,High,239
+SH0303,SUP001,C006,East,Amazon Logistics,2025-09-27,2025-10-06,2025-10-06,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0304,SUP004,C006,South,Amazon Logistics,2025-03-11,2025-03-20,2025-03-21,1,Supplier issue,Yes,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0305,SUP005,C005,South,Amazon Logistics,2025-06-21,2025-06-29,2025-06-29,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0306,SUP002,C004,West,BlueDart,2025-04-21,2025-04-30,2025-04-30,0,None,No,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0307,SUP003,C001,West,Delhivery,2025-02-10,2025-02-19,2025-02-19,99,None,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0308,SUP004,C006,East,Amazon Logistics,2025-09-10,2025-09-13,2025-09-17,4,Customs,Yes,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0309,SUP001,C003,East,Delhivery,2025-03-27,2025-03-31,2025-04-02,2,None,Yes,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0310,SUP001,C001,North,BlueDart,2025-05-12,2025-05-15,2025-05-15,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0311,SUP001,C002,East,DTDC,2025-08-26,2025-09-02,2025-09-07,5,Traffic,Yes,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0312,SUP004,C005,East,Delhivery,2025-01-14,2025-01-18,2025-01-18,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0313,SUP001,C006,West,DTDC,2025-07-11,2025-07-16,2025-07-16,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0314,SUP004,C003,West,Amazon Logistics,2025-09-01,2025-09-06,2025-09-06,0,None,No,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0315,SUP003,C003,West,BlueDart,2025-02-21,2025-02-24,2025-02-24,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0316,SUP002,C005,South,DTDC,2025-08-11,2025-08-20,2025-08-20,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0317,SUP002,C004,South,Amazon Logistics,2025-06-23,2025-06-29,2025-06-29,99,None,Yes,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0318,SUP003,C003,West,Amazon Logistics,2025-07-03,2025-07-06,2025-07-09,3,None,Yes,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0319,SUP002,C001,South,BlueDart,2025-06-22,2025-06-27,2025-06-27,0,None,No,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0320,SUP001,C004,East,DTDC,2025-01-04,2025-01-08,2025-01-08,0,None,No,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0321,SUP005,C002,West,Amazon Logistics,2025-06-16,2025-06-21,2025-06-21,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0322,SUP002,C005,North,BlueDart,2025-04-05,2025-04-12,2025-04-12,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0323,SUP001,C004,East,Amazon Logistics,2025-03-22,2025-03-26,2025-03-26,0,,No,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0324,SUP001,C003,South,Delhivery,2025-03-28,2025-04-04,2025-04-04,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0325,SUP001,C003,East,BlueDart,2025-06-25,2025-07-02,2025-07-02,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0326,SUP002,C006,South,Amazon Logistics,2025-07-09,2025-07-13,2025-07-14,1,Customs,Yes,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0327,SUP005,C005,East,BlueDart,2025-09-27,2025-10-05,2025-10-05,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0328,SUP004,C001,West,BlueDart,2025-08-19,2025-08-24,2025-08-24,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0329,SUP001,C002,North,Delhivery,2025-05-10,2025-05-13,2025-05-13,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0330,SUP004,C001,East,DTDC,2025-05-20,2025-05-28,2025-05-28,0,,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0331,SUP004,C005,North,Delhivery,2025-05-07,2025-05-15,2025-05-15,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0332,SUP002,C005,South,Delhivery,2025-08-02,2025-08-09,2025-08-09,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0333,SUP002,C004,North,Delhivery,2025-04-08,2025-04-14,2025-04-15,1,Customs,Yes,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0334,SUP005,C001,South,BlueDart,2025-04-14,2025-04-19,2025-04-19,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0335,SUP005,C002,South,Delhivery,2025-02-21,2025-03-02,2025-03-02,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0336,SUP003,C006,North,Amazon Logistics,2025-08-04,2025-08-12,2025-08-12,0,None,No,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0337,SUP003,C002,West,Amazon Logistics,2025-09-24,2025-09-30,2025-09-30,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0338,SUP004,C006,East,Delhivery,2025-06-02,2025-06-06,2025-06-09,3,Weather,Yes,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0339,SUP001,C004,West,BlueDart,2025-03-27,2025-04-01,2025-04-04,99,Supplier issue,Yes,Alpha Ltd,US,0.87,7,Bearing,Electrical,High,320
+SH0340,SUP002,C004,North,DTDC,2025-08-04,2025-08-13,2025-08-13,0,None,No,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0341,SUP004,C001,East,Delhivery,2025-09-18,2025-09-22,2025-09-22,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0342,SUP002,C002,East,BlueDart,2025-06-24,2025-06-29,2025-06-29,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0343,SUP001,C006,North,DTDC,2025-01-05,2025-01-08,2025-01-12,4,Supplier issue,Yes,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0344,SUP002,C005,East,Amazon Logistics,2025-04-20,2025-04-24,2025-04-24,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0345,SUP004,C004,North,Delhivery,2025-02-11,2025-02-14,2025-02-14,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0346,SUP001,C006,South,Delhivery,2025-07-13,2025-07-17,2025-07-17,0,,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0347,SUP004,C006,West,DTDC,2025-07-23,2025-07-26,2025-07-30,4,None,Yes,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0348,SUP001,C002,East,DTDC,2025-05-22,2025-05-25,2025-05-25,0,,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0349,SUP005,C004,West,Amazon Logistics,2025-05-28,2025-06-02,2025-06-02,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0350,SUP001,C002,East,DTDC,2025-01-08,2025-01-12,2025-01-12,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0351,SUP001,C002,West,DTDC,2025-09-18,2025-09-27,2025-09-28,1,Traffic,Yes,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0352,SUP005,C004,West,Amazon Logistics,2025-07-06,2025-07-12,2025-07-12,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0353,SUP002,C003,North,Amazon Logistics,2025-03-23,2025-03-26,2025-03-26,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0354,SUP004,C003,North,Amazon Logistics,2025-09-01,2025-09-07,2025-09-07,0,None,No,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0355,SUP004,C004,South,BlueDart,2025-04-21,2025-04-25,2025-04-25,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0356,SUP001,C006,North,Delhivery,2025-07-19,2025-07-24,2025-07-29,-1,,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0357,SUP002,C005,North,BlueDart,2025-01-12,2025-01-15,2025-01-15,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0358,SUP001,C003,West,BlueDart,2025-04-11,2025-04-19,2025-04-19,0,,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0359,SUP004,C006,North,DTDC,2025-03-08,2025-03-16,2025-03-16,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0360,SUP004,C002,South,Delhivery,2025-04-28,2025-05-04,2025-05-05,1,Traffic,Yes,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0361,SUP003,C005,South,Amazon Logistics,2025-07-28,2025-08-06,2025-08-06,0,,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0362,SUP004,C001,South,BlueDart,2025-08-10,2025-08-19,2025-08-19,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0363,SUP004,C001,North,DTDC,2025-05-06,2025-05-12,2025-05-14,2,Carrier issue,Yes,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0364,SUP003,C001,South,BlueDart,2025-01-23,2025-01-29,2025-02-02,4,Supplier issue,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0365,SUP002,C004,West,Amazon Logistics,2025-05-24,2025-06-02,2025-06-03,1,Traffic,Yes,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0366,SUP003,C002,West,Delhivery,2025-09-10,2025-09-18,2025-09-18,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0367,SUP004,C006,West,Amazon Logistics,2025-02-28,2025-03-05,2025-03-07,2,Customs,Yes,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0368,SUP004,C005,West,DTDC,2025-05-24,2025-06-02,2025-06-02,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0369,SUP003,C004,West,BlueDart,2025-07-09,2025-07-13,2025-07-13,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0370,SUP005,C001,East,BlueDart,2025-06-21,2025-06-27,2025-06-27,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0371,SUP002,C006,East,BlueDart,2025-07-05,2025-07-09,2025-07-09,0,None,No,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0372,SUP004,C005,North,Amazon Logistics,2025-01-26,2025-01-31,2025-01-31,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0373,SUP002,C002,West,Delhivery,2025-01-11,2025-01-17,2025-01-17,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0374,SUP002,C002,East,Amazon Logistics,2025-03-22,2025-03-31,2025-04-05,5,Weather,Yes,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0375,SUP001,C003,North,Amazon Logistics,2025-01-04,2025-01-12,2025-01-12,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0376,SUP005,C006,South,Amazon Logistics,2025-03-09,2025-03-15,2025-03-15,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0377,SUP002,C005,East,BlueDart,2025-02-06,2025-02-11,2025-02-11,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0378,SUP002,C002,West,BlueDart,2025-07-11,2025-07-15,2025-07-15,0,None,No,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0379,SUP003,C001,South,Amazon Logistics,2025-07-13,2025-07-20,2025-07-20,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0380,SUP003,C004,South,Amazon Logistics,2025-04-21,2025-04-27,2025-04-27,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0381,SUP001,C006,East,Amazon Logistics,2025-07-01,2025-07-05,2025-07-05,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0382,SUP005,C001,South,DTDC,2025-07-17,2025-07-26,2025-07-26,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0383,SUP001,C002,South,BlueDart,2025-06-23,2025-06-26,2025-06-26,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0384,SUP004,C002,North,BlueDart,2025-04-17,2025-04-26,2025-04-26,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0385,SUP002,C003,East,BlueDart,2025-01-02,2025-01-11,2025-01-12,1,Supplier issue,Yes,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0386,SUP003,C002,West,BlueDart,2025-01-08,2025-01-15,2025-01-19,4,Traffic,Yes,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0387,SUP005,C004,East,DTDC,2025-06-06,2025-06-10,2025-06-10,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0388,SUP002,C001,West,Delhivery,2025-05-02,2025-05-07,2025-05-11,4,Traffic,Yes,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0389,SUP001,C006,South,Amazon Logistics,2025-09-22,2025-09-27,2025-09-27,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0390,SUP005,C004,East,Delhivery,2025-05-14,2025-05-22,2025-05-22,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0391,SUP002,C003,West,DTDC,2025-03-12,2025-03-19,2025-03-19,99,None,Yes,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0392,SUP002,C004,East,DTDC,2025-05-08,2025-05-11,2025-05-15,4,Supplier issue,Yes,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0393,SUP002,C005,South,BlueDart,2025-08-24,2025-09-01,2025-09-06,5,Customs,Yes,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0394,SUP003,C001,West,Delhivery,2025-04-02,2025-04-09,2025-04-09,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0395,SUP005,C005,South,Amazon Logistics,2025-03-18,2025-03-26,2025-03-26,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0396,SUP005,C001,North,Delhivery,2025-01-18,2025-01-24,2025-01-24,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0397,SUP005,C004,North,DTDC,2025-09-25,2025-09-29,2025-09-29,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0398,SUP005,C005,North,Delhivery,2025-06-11,2025-06-20,2025-06-23,3,Traffic,Yes,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0399,SUP003,C004,West,Amazon Logistics,2025-02-03,2025-02-10,2025-02-10,0,None,No,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0400,SUP001,C002,West,DTDC,2025-07-07,2025-07-16,2025-07-16,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0401,SUP001,C003,South,BlueDart,2025-01-23,2025-01-26,2025-01-26,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0402,SUP005,C006,South,DTDC,2025-08-14,2025-08-17,2025-08-17,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0403,SUP002,C006,North,DTDC,2025-05-11,2025-05-15,2025-05-15,0,None,No,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0404,SUP003,C005,West,Delhivery,2025-04-09,2025-04-14,2025-04-14,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0405,SUP004,C003,North,DTDC,2025-08-21,2025-08-29,2025-09-01,3,Weather,Yes,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0406,SUP002,C003,North,DTDC,2025-05-07,2025-05-11,2025-05-11,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0407,SUP001,C002,West,DTDC,2025-06-25,2025-07-04,2025-07-05,1,Supplier issue,Yes,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0408,SUP001,C001,South,DTDC,2025-07-24,2025-07-30,2025-08-02,3,Customs,Yes,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0409,SUP003,C004,West,Amazon Logistics,2025-03-07,2025-03-13,2025-03-14,1,Carrier issue,Yes,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0410,SUP003,C004,East,DTDC,2025-07-17,2025-07-20,2025-07-23,3,None,Yes,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0411,SUP001,C002,South,BlueDart,2025-04-13,2025-04-22,2025-04-22,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0412,SUP004,C006,West,BlueDart,2025-06-27,2025-07-03,2025-07-03,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0413,SUP001,C002,East,DTDC,2025-07-01,2025-07-05,2025-07-05,0,None,No,Alpha Ltd,US,0.87,7,Sensor,Electrical,Medium,219
+SH0414,SUP001,C001,East,Delhivery,2025-09-03,2025-09-07,2025-09-07,0,None,No,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0415,SUP003,C005,East,Amazon Logistics,2025-04-13,2025-04-21,2025-04-21,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0416,SUP005,C001,South,DTDC,2025-05-03,2025-05-12,2025-05-16,4,None,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0417,SUP005,C001,South,BlueDart,2025-09-23,2025-10-02,2025-10-07,5,Traffic,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0418,SUP003,C002,South,Delhivery,2025-05-14,2025-05-21,2025-05-21,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0419,SUP003,C001,West,Delhivery,2025-09-23,2025-09-29,2025-10-02,3,None,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0420,SUP003,C003,West,DTDC,2025-08-18,2025-08-27,2025-08-27,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0421,SUP004,C006,North,Delhivery,2025-09-10,2025-09-16,2025-09-16,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0422,SUP005,C006,North,Amazon Logistics,2025-06-17,2025-06-22,2025-06-22,0,,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0423,SUP002,C002,North,DTDC,2025-09-21,2025-09-27,2025-09-27,99,None,Yes,Beta Co,India,0.81,6,Sensor,Electrical,Medium,219
+SH0424,SUP004,C004,West,BlueDart,2025-04-21,2025-04-25,2025-04-25,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0425,SUP004,C001,West,BlueDart,2025-09-23,2025-10-01,2025-10-01,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0426,SUP005,C001,North,DTDC,2025-01-27,2025-02-05,2025-02-05,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0427,SUP005,C006,West,DTDC,2025-01-02,2025-01-07,2025-01-07,0,None,No,Epsilon Exports,US,0.76,7,Controller,Mechanical,Low,495
+SH0428,SUP005,C001,South,BlueDart,2025-05-09,2025-05-16,2025-05-16,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0429,SUP005,C002,West,DTDC,2025-05-25,2025-05-29,2025-05-29,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0430,SUP003,C002,West,DTDC,2025-08-06,2025-08-15,2025-08-18,3,Weather,Yes,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0431,SUP005,C003,South,Delhivery,2025-09-06,2025-09-12,2025-09-12,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0432,SUP004,C003,East,BlueDart,2025-08-15,2025-08-21,2025-08-26,5,Weather,Yes,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0433,SUP005,C003,West,DTDC,2025-03-03,2025-03-12,2025-03-12,0,,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0434,SUP002,C003,East,Amazon Logistics,2025-07-26,2025-08-01,2025-08-01,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0435,SUP005,C003,South,Delhivery,2025-06-07,2025-06-10,2025-06-10,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0436,SUP004,C006,South,Amazon Logistics,2025-07-06,2025-07-13,2025-07-13,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0437,SUP004,C004,East,Amazon Logistics,2025-05-21,2025-05-24,2025-05-25,99,Weather,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0438,SUP003,C003,North,Amazon Logistics,2025-08-11,2025-08-19,2025-08-19,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0439,SUP005,C001,North,Delhivery,2025-08-12,2025-08-16,2025-08-17,1,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0440,SUP003,C001,East,BlueDart,2025-02-25,2025-02-28,2025-03-03,3,Carrier issue,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0441,SUP005,C001,West,Amazon Logistics,2025-02-09,2025-02-18,2025-02-18,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0442,SUP004,C005,East,DTDC,2025-07-16,2025-07-19,2025-07-21,2,,Yes,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0443,SUP003,C005,East,Amazon Logistics,2025-08-22,2025-08-28,2025-08-30,2,Traffic,Yes,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0444,SUP001,C006,South,Amazon Logistics,2025-06-18,2025-06-21,2025-06-21,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0445,SUP003,C005,North,Delhivery,2025-07-05,2025-07-11,2025-07-11,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0446,SUP003,C004,West,Amazon Logistics,2025-03-04,2025-03-09,2025-03-11,2,Carrier issue,Yes,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0447,SUP005,C001,West,Delhivery,2025-05-18,2025-05-23,2025-05-24,1,Supplier issue,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0448,SUP002,C004,East,Amazon Logistics,2025-01-28,2025-02-02,2025-02-02,0,None,No,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0449,SUP003,C003,East,Amazon Logistics,2025-03-24,2025-03-29,2025-03-29,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0450,SUP003,C001,South,Amazon Logistics,2025-01-06,2025-01-09,2025-01-09,0,None,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0451,SUP003,C005,South,BlueDart,2025-06-02,2025-06-10,2025-06-10,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0452,SUP003,C003,East,DTDC,2025-04-02,2025-04-05,2025-04-05,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0453,SUP005,C005,West,BlueDart,2025-01-09,2025-01-18,2025-01-18,0,None,No,Epsilon Exports,US,0.76,7,Pump,Mechanical,High,239
+SH0454,SUP002,C001,East,DTDC,2025-09-23,2025-09-27,2025-09-27,0,None,No,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0455,SUP003,C002,South,Amazon Logistics,2025-06-10,2025-06-17,2025-06-17,0,None,No,Gamma Industries,Asia,0.76,5,Sensor,Electrical,Medium,219
+SH0456,SUP003,C001,East,DTDC,2025-08-10,2025-08-13,2025-08-14,1,Supplier issue,Yes,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0457,SUP004,C005,East,BlueDart,2025-08-24,2025-08-30,2025-08-30,0,,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0458,SUP004,C006,West,Amazon Logistics,2025-02-06,2025-02-12,2025-02-12,0,None,No,Delta Corp,US,0.63,8,Controller,Mechanical,Low,495
+SH0459,SUP003,C003,South,Delhivery,2025-05-07,2025-05-10,2025-05-10,0,None,No,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0460,SUP005,C003,North,Delhivery,2025-08-22,2025-08-29,2025-08-29,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0461,SUP004,C005,West,DTDC,2025-02-24,2025-03-01,2025-03-01,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0462,SUP004,C002,South,Amazon Logistics,2025-08-18,2025-08-23,2025-08-23,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0463,SUP001,C006,South,BlueDart,2025-08-16,2025-08-24,2025-08-24,0,None,No,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0464,SUP005,C004,East,BlueDart,2025-05-03,2025-05-10,2025-05-10,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0465,SUP001,C003,West,Amazon Logistics,2025-04-12,2025-04-17,2025-04-17,0,None,No,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0466,SUP001,C001,East,BlueDart,2025-03-08,2025-03-16,2025-03-18,2,Weather,Yes,Alpha Ltd,US,0.87,7,Motor,Electrical,Medium,108
+SH0467,SUP004,C002,North,DTDC,2025-09-02,2025-09-06,2025-09-06,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0468,SUP003,C005,East,Amazon Logistics,2025-02-04,2025-02-07,2025-02-07,0,None,No,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0469,SUP004,C005,East,Delhivery,2025-08-15,2025-08-23,2025-08-27,4,Traffic,Yes,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0470,SUP005,C003,North,Delhivery,2025-09-22,2025-09-25,2025-09-25,0,None,No,Epsilon Exports,US,0.76,7,Valve,Electrical,High,237
+SH0471,SUP004,C002,North,BlueDart,2025-09-17,2025-09-26,2025-09-28,2,Weather,Yes,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0472,SUP003,C003,West,DTDC,2025-03-12,2025-03-16,2025-03-18,2,Supplier issue,Yes,Gamma Industries,Asia,0.76,5,Valve,Electrical,High,237
+SH0473,SUP001,C003,West,Delhivery,2025-07-10,2025-07-16,2025-07-20,4,Carrier issue,Yes,Alpha Ltd,US,0.87,7,Valve,Electrical,High,237
+SH0474,SUP004,C004,North,Amazon Logistics,2025-03-03,2025-03-07,2025-03-08,1,Weather,Yes,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0475,SUP004,C003,North,DTDC,2025-05-25,2025-05-28,2025-05-28,0,None,No,Delta Corp,US,0.63,8,Valve,Electrical,High,237
+SH0476,SUP005,C002,East,BlueDart,2025-09-26,2025-10-05,2025-10-05,0,None,No,Epsilon Exports,US,0.76,7,Sensor,Electrical,Medium,219
+SH0477,SUP004,C001,North,Delhivery,2025-08-22,2025-08-29,2025-08-29,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0478,SUP002,C006,South,Amazon Logistics,2025-02-27,2025-03-02,2025-03-05,99,Customs,Yes,Beta Co,India,0.81,6,Controller,Mechanical,Low,495
+SH0479,SUP003,C001,West,BlueDart,2025-05-19,2025-05-24,2025-05-24,0,,No,Gamma Industries,Asia,0.76,5,Motor,Electrical,Medium,108
+SH0480,SUP002,C004,North,Amazon Logistics,2025-06-05,2025-06-14,2025-06-17,3,Traffic,Yes,Beta Co,India,0.81,6,Bearing,Electrical,High,320
+SH0481,SUP003,C006,South,BlueDart,2025-09-28,2025-10-06,2025-10-06,0,None,No,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0482,SUP003,C006,West,DTDC,2025-08-08,2025-08-16,2025-08-20,4,Supplier issue,Yes,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
+SH0483,SUP004,C004,West,Amazon Logistics,2025-09-21,2025-09-27,2025-09-27,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0484,SUP004,C002,South,Amazon Logistics,2025-05-02,2025-05-09,2025-05-09,0,None,No,Delta Corp,US,0.63,8,Sensor,Electrical,Medium,219
+SH0485,SUP005,C001,North,BlueDart,2025-05-15,2025-05-24,2025-05-26,2,Carrier issue,Yes,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0486,SUP002,C005,East,Amazon Logistics,2025-06-09,2025-06-18,2025-06-23,5,Supplier issue,Yes,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0487,SUP004,C004,North,Delhivery,2025-09-07,2025-09-12,2025-09-12,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0488,SUP004,C005,East,Delhivery,2025-01-01,2025-01-06,2025-01-06,0,None,No,Delta Corp,US,0.63,8,Pump,Mechanical,High,239
+SH0489,SUP003,C005,West,BlueDart,2025-07-20,2025-07-26,2025-07-27,99,Customs,Yes,Gamma Industries,Asia,0.76,5,Pump,Mechanical,High,239
+SH0490,SUP005,C004,East,BlueDart,2025-05-20,2025-05-29,2025-05-29,0,None,No,Epsilon Exports,US,0.76,7,Bearing,Electrical,High,320
+SH0491,SUP002,C001,North,BlueDart,2025-07-22,2025-07-27,2025-07-27,0,None,No,Beta Co,India,0.81,6,Motor,Electrical,Medium,108
+SH0492,SUP004,C001,East,DTDC,2025-03-08,2025-03-12,2025-03-12,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0493,SUP004,C001,East,Amazon Logistics,2025-06-21,2025-06-30,2025-06-30,0,None,No,Delta Corp,US,0.63,8,Motor,Electrical,Medium,108
+SH0494,SUP005,C001,East,Delhivery,2025-06-21,2025-06-28,2025-06-28,0,None,No,Epsilon Exports,US,0.76,7,Motor,Electrical,Medium,108
+SH0495,SUP002,C003,East,BlueDart,2025-03-20,2025-03-28,2025-03-28,0,None,No,Beta Co,India,0.81,6,Valve,Electrical,High,237
+SH0496,SUP004,C004,East,Amazon Logistics,2025-09-04,2025-09-11,2025-09-11,0,None,No,Delta Corp,US,0.63,8,Bearing,Electrical,High,320
+SH0497,SUP001,C006,North,Delhivery,2025-05-23,2025-05-29,2025-06-02,4,Weather,Yes,Alpha Ltd,US,0.87,7,Controller,Mechanical,Low,495
+SH0498,SUP003,C004,East,Delhivery,2025-06-28,2025-07-01,2025-07-04,3,Traffic,Yes,Gamma Industries,Asia,0.76,5,Bearing,Electrical,High,320
+SH0499,SUP002,C005,West,DTDC,2025-08-28,2025-09-05,2025-09-05,0,None,No,Beta Co,India,0.81,6,Pump,Mechanical,High,239
+SH0500,SUP003,C006,North,DTDC,2025-09-22,2025-09-25,2025-09-25,0,None,No,Gamma Industries,Asia,0.76,5,Controller,Mechanical,Low,495
